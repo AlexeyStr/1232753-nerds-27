@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алексей С.](https://up.htmlacademy.ru/htmlcss/27/user/1232753).
-* Наставник: `Вадим Новаш`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
