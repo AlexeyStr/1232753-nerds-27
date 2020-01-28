@@ -4,90 +4,73 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <a>
+  <body class="page">
+    <header class="page-header">
+      <nav class="page-navigation">
+        <div class="logo-nerds">
            <img src="img/nerds-logo.svg" width="160" height="65"
           alt="Логотип «Nerds»">
-        </a>
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+        </div>
+        <ul class="navigation-list">
+          <li class="navigation-list-item"><a href="#">Студия</a></li>
+          <li class="navigation-list-item"><a href="#">Клиенты</a></li>
+          <li class="navigation-list-item"><a href="catalog.html">Магазин</a></li>
+          <li class="navigation-list-item"><a href="#">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="navigation-button">
           <li>
-            <button type="button">Корзина</button>
+            <a class="crate" href="#"">Корзина</a>
           </li>
         </ul>
       </nav>    
     </header>
-    <main>
-      <section>
+    <main class="page-main">
+      <section class="slider">
         <!--Здесь будет секция со слайдером-->
       </section>
       <section class="service">
         <!--Услуги-->
-        <ul class="service_list">
-          <li>
-            <h2>Веб-сайты</h2>
-          </li>
-          <li>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          </li>
-          <li>
+        <ul class="service-list">
+          <li class="service-list-item">
+            <h2 class="service-list-title">Веб-сайты</h2>
+            <p class="service-list-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <img src="img/sites.svg" width="300" height="146" alt="Веб-сайты">
+            <a class="order" href="#">Заказать</a>
           </li>
-          <li>
-            <a class="button" href="#">Заказать</a>
+          <li lass="service-list-item">
+            <h2 class="service-list-title">Приложения</h2>
+            <p class="service-list-description">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <img src="img/applications.svg" width="300" height="146" alt="Приложения">>
+            <a class="order" href="#">Заказать</a>
           </li>
-          <li>
-            <h2>Приложения</h2>
-          </li>
-          <li>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          </li>
-          <li>
-            <img src="img/applications.svg" width="300" height="146" alt="Приложения">
-          </li>
-          <li>
-            <a class="button" href="#">Заказать</a>
-          </li>
-            <h2>Презентации</h2>
-          </li>
-          <li>
-            <p>Вы даже не подозреваете, 
+          <li lass="service-list-item">
+            <h2 class="service-list-title">Презентации</h2>
+            <p class="service-list-description">Вы даже не подозреваете, 
               насколько вы изумительны!</p>
-          </li>
-          <li>
             <img src="img/presentation.svg" width="300" height="146" alt="Презентация">
-          </li>
-          <li>
-            <a class="button" href="#">Заказать</a>
+            <a class="order" href="#">Заказать</a>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="studio">
         <!--Здесь будет секция о студии-->
       </section>
-      <section>
+      <section class="partners">
         <!--Здесь будет секция о партнерах-->
       </section>
-      <section>
+    </main>
+    <footer class="page-footer">
+      <section class="contacts">
         <!--Здесь будет секция о контактах-->
       </section>
-    </main>
-    <footer>
       <ul>
         <li><a href="#">Вконтакте</a></li>
         <li><a href="#">Фейсбук</a></li>
         <li><a href="#">Инстаграм</a></li>
       </ul>
       <p class="prompt">
-        <span class="prompt_appeal">Давайте дружить, это выгодно!</span>
-        <span class="prompt_discount">Скидка 10% для друзей из социальных сетей.</span>
+        <span class="prompt-appeal">Давайте дружить, это выгодно!</span>
+        <span class="prompt-discount">Скидка 10% для друзей из социальных сетей.</span>
       </p>
     </footer>
   </body>
