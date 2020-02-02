@@ -206,5 +206,33 @@
         <span class="prompt-discount">Скидка 10% для друзей из социальных сетей.</span>
       </p>
     </footer>
+
+    <section class="popup">
+      <form  class="write-us" action="" method="post">
+        <fieldset>
+          <legend>Напишите нам</legend>
+          
+          <div class="half-width">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="half-width">
+           <label for="mail">Ваш e-mail:</label>
+           <input type="text" name="mail" placeholder="email@example.com">
+          </div>
+          <div class="text-letter">
+            <label for="letter">Текст письма:</label>
+            <textarea name="letter" rows="5" placeholder="В свободной форме"></textarea>
+          </div>
+        </fieldset>
+
+        <div class="send">
+          <input type="submit" value="Отправить">
+        </div>
+        <div class="reset">
+          <button type="reset"><img src="img/close-cross.svg" alt="Сбросить"></button>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
