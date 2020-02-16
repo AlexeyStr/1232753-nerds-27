@@ -1,6 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
-    padding: 0;
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -30,8 +37,15 @@ a {
     background-color: #eeeeee;
 }
 
-.logo,
-.logo:hover {
+.navigation-list,
+.user-area {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.logo:hover,
+.logo:focus {
    opacity: 0.8; 
 }
 
@@ -41,9 +55,15 @@ a {
 
 .navigation-list-item a,
 .user-area a {
+    color: #000000;
     font-weight: 500;
     line-height: 30px;
     text-transform: uppercase;
+}
+
+.navigation-list-item .current,
+.user-area .current {
+    color: white;
 }
 
 .navigation-list-item a:hover,
@@ -72,31 +92,41 @@ a {
 }
 
 .slider-item h2 {
-    width: 515px;
-    height: 109px;
     font-size: 55px;
     font-weight: 500;
     line-height: 55px;
 }
 
 .slider-item p {
-    width: 409px;
-    height: 41px;
     color: #283136;
 }
 
-.btn,
-.send {
-    display: block;
-    padding-top: 32px;
-    text-align: center;
+.slider .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 240px;
     height: 50px;
     color: #ffffff;
     font-weight: 500;
     line-height: 18px;
+    border-radius: 5px;
     text-transform: uppercase;
     background-color: #fb565a;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 50px;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #fb565a; 
 }
 
 .btn:hover,
@@ -107,9 +137,8 @@ a {
 .btn:active {
     box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
     background-color: #d7373b;
-    opacity: 0.3;
+    color: rgba(255,255,255,0.3);
 }
-
 
 .btn.green {
     background-color: #00ca74;
@@ -138,8 +167,15 @@ a {
     box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
     background-color: #e5a722;
 }
+
+.feedback .btn {
+    width: 219px;
+    height: 50px;
+}
+
 .service-list {
     list-style: none;
+    padding: 0;
     background-color: #ffffff;
 }
 
@@ -178,6 +214,10 @@ a {
     text-transform: uppercase;
 }
 
+.about-us-list {
+    padding: 0;
+}
+
 .about-us-item {
     list-style: none;
     font-weight: 400;
@@ -192,6 +232,7 @@ a {
 
 .statistic-list {
     list-style: none;
+    padding: 0;
 }
 
 .percent {
@@ -211,6 +252,7 @@ a {
 
 .partners-list {
     list-style: none;
+    padding: 0;
 }
 
 .partners-item a {
@@ -226,13 +268,17 @@ a {
     opacity: 0.1;
 }
 
-.title h1 {
+.catalog-header h1 {
+    margin: 0;
     font-size: 55px;
     font-weight: 500;
     line-height: 55px;
+    background-color: #eeeeee;
 }
 
 .filters fieldset {
+    margin: 0;
+    padding: 0;
     border: none;
 }
 
@@ -243,13 +289,194 @@ a {
     text-transform: uppercase;
 }
 
-.network-list label {
+.network-list p,
+.network-list p:hover,
+.network-list p:focus {
+    margin: 0;
+    color: #283136;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
 }
 
-.map {
+.features-list p,
+.features-list p:hover,
+.features-list p:focus {
+    margin: 0;
+    color: #283136;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.filters input {
+    width: 260px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #eeeeee;
+}
+
+.filters input:hover,
+.filters input:focus {
+    background-color: #dfdfdf;
+}
+
+.filters input:active {
+    color: rgba(0,0,0,0.3);
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+}
+
+.sort h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.sort ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-sort-item a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 0.3;
+    text-transform: uppercase;
+}
+
+.user-sort-item a:hover,
+.user-sort-item a:focus {
+    opacity: 0.6;
+}
+
+.user-sort-item a:active {
+    color: #000000;
+    opacity: 1;
+}
+
+.arrow-sort-item a {
+    opacity: 0.2;
+}
+
+.arrow-sort-item a:hover,
+.arrow-sort-item a:focus {
+    opacity: 0.6;
+}
+
+.arrow-sort-item a:active {
+    opacity: 1;
+}
+
+.catalog ul,
+.pagination ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden h3 {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.hidden h3:hover,
+.hidden h3:focus {
+    color: #fb565a;
+}
+
+.hidden h3:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.hidden .btn {
+    width: 200px;
+    height: 50px;
+}
+
+.hidden .btn:hover,
+.hidden .btn:focus {
+    width: 200px;
+    height: 50px;
+}
+
+.hidden .btn:active {
+    color: rgba(255,255, 255, 1);
+}
+
+
+.pagination-item a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    background-color: #eeeeee;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+    background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+    color: rgba(0,0,0,0.3);
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+}
+
+.pagination-item-current a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #dbdbdb;
+}
+
+.pagination-item button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 50px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #eeeeee;
+}
+
+.pagination-item button:hover,
+.pagination-item button:focus {
+    background-color: #dfdfdf;
+}
+
+.pagination-item button:active {
+    color: rgba(0,0,0,0.3);
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+}
+
+.map img {
+    display: block;
     background-color: #b5b5b5;
 }
 
@@ -277,6 +504,7 @@ a {
 
 .social-list {
     list-style: none;
+    padding: 0;
 }
 
 .prompt .prompt-appeal {
