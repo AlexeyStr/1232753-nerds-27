@@ -31,47 +31,46 @@ a {
 }
 
 .page-header {
-    display: flex;
-    min-height: 132px
-}
-
-.page-header .logo {
-    display: inline-flex;
-    margin-top: 49px;
-    margin-left: 140px;
-}
-
-.navigation {
-    display: inline-flex;
-    width: 100%;
-    font-weight: 500;
-    line-height: 30px;
-    text-transform: uppercase;
+    padding-top: 49px;
     background-color: #eeeeee;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    outline: 1px solid;
+}
 
-.navigation-list,
-.user-area {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-    margin-top: 83px;
-    min-height: 30px;
+
+.navigation {
+    display: flex;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    
 }
 
 .navigation-list {
-    min-width: 438px;
+    display: flex;
+    margin: 0;
+    padding: 0;
     margin-left: 202px;
+    align-items: center;
+    list-style: none;
+    max-width: 700px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
 
 .user-area {
-   position: absolute;
-   right: 140px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    align-items: center;
+    list-style: none;   
 }
 
 .logo:hover,
@@ -121,28 +120,37 @@ a {
     background-color: #eeeeee; 
 }
 
+.slider-item {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    max-width: 515px;
+    flex-wrap: wrap;
+    padding-top: 85px;
+    padding-bottom: 80px;
+}
+
 .slider-item h2 {
+    margin: 0;
     font-size: 55px;
     font-weight: 500;
     line-height: 55px;
 }
 
 .slider-item p {
+    margin: 0;
     color: #283136;
+    margin-top: 28px;
+    margin-bottom: 42px;
 }
 
-.slider .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.slider .btn {   
     width: 240px;
-    height: 50px;
-    color: #ffffff;
-    font-weight: 500;
-    line-height: 18px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    background-color: #fb565a;
+}
+
+.slider-two,
+.slider-three {
+    display: none;
 }
 
 .btn {
@@ -204,37 +212,55 @@ a {
 }
 
 .service {
-    display: flex;
-    min-width: 1400px;
-    min-height: 509px;
-}
-
-.service-list {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-width: 1100px;
-    list-style: none;
-    margin-top: 80px;
-    margin-left: 140px;
-    padding: 0;
     background-color: #ffffff;
 }
 
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+
 .service-list-item h2 {
+    margin: 0;
+    padding: 0;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
+    margin-top: 26px;
 }
 
-.description {
+.service-list-item .description {
+    margin: 0;
+    padding: 0;
     width: 260px;
     height: 41px;
     color: #283136;
+    margin-top: 26px;
+    margin-bottom: 35px;
+}
+
+.studio-wrapper {
+    display: flex;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    padding-top: 80px;
+    padding-bottom: 76px;
 }
 
 .about-us .title {
+    margin: 0;
+    padding: 0;
     width: 650px;
     height: 87px;
     font-size: 45px;
@@ -243,58 +269,92 @@ a {
 }
 
 .about-us .description {
-    width: 616px;
-    height: 40px;
+    margin: 0;
+    padding: 0;
     color: #283136;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    padding-top: 35px;
+    padding-bottom: 47px;
 }
 
 .list-title {
+    margin: 0;
+    padding: 0;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .about-us-list {
+    margin: 0;
     padding: 0;
 }
 
 .about-us-item {
+    margin: 0;
+    padding: 0;
     list-style: none;
     font-weight: 400;
+    padding-top: 24px;
+}
+
+.statistic {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    padding-top: 40px;
+    padding-bottom: 76px;
 }
 
 .statistic .title {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
+    margin-top: 41px;
 }
 
 .statistic-list {
-    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
     padding: 0;
+    height: 95px;
+    list-style: none;
+    margin-top: 30px;
 }
 
 .percent {
+    margin: 0;
+    padding: 0;
     font-size: 45px;
     font-weight: 700;
-    line-height: 10.06px;
+    line-height: 51px;
 }
 
 .statistic-item .description {
+    margin: 0;
+    padding: 0;
     width: 105px;
     height: 34px;
     color: #283136;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
+    padding-top: 27px;
 }
 
 .partners-list {
-    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
     padding: 0;
+    list-style: none;
+    height: 180px;
 }
 
 .partners-item a {
@@ -519,16 +579,30 @@ a {
 
 .map img {
     display: block;
+}
+
+.map {
     background-color: #b5b5b5;
 }
 
+
+
 .feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 319px;
     height: 308px;
+    padding-top: 54px;
+    padding-bottom: 47px;
+    padding-left: 50px;
     background-color: #ffffff;
+    outline: 1px solid;
 }
 
 .feedback .title {
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
@@ -536,16 +610,35 @@ a {
 }
 
 .feedback .adress {
+    margin: 0;
+    padding: 0;
     width: 240px;
     height: 71px;
     color: #666666;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
+    /* padding-top: 32px; */
 }
 
+
 .social-list {
+    display: inline-flex;
+
+    margin: 0;
+    padding: 0;
     list-style: none;
+    
+}
+
+.prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prompt {
+    margin: 0;
     padding: 0;
 }
 
@@ -558,7 +651,7 @@ a {
 }
 
 .prompt .prompt-discount {
-    width: 343px;
+    /* width: 343px; */
     height: 16px;
     color: #444444;
     font-size: 16px;
