@@ -64,13 +64,12 @@ a {
     align-items: center;
     list-style: none;
     max-width: 700px;
-    justify-content: space-between;
     flex-wrap: wrap;
     
 }
 
-.navigation-list a {
-    padding-right: 45px;
+.navigation-list li:not(:last-child) {
+    margin-right: 45px;
 }
 
 .catalog-header .navigation-list {
@@ -147,10 +146,37 @@ a {
     display: flex;
     margin: 0;
     padding: 0;
+}
+
+.slider-text {
+    margin: 0;
+    padding: 0;
     max-width: 515px;
     flex-wrap: wrap;
     padding-top: 85px;
     padding-bottom: 80px;
+
+}
+
+.slider-item.slider-one {
+    background-image: url("../img/slide-1.png");
+    background-repeat: no-repeat;
+    background-size: 698px 413px;
+    background-position: right bottom;
+}
+
+.slider-item.slider-two {
+    background-image: url("../img/slide-2.png");
+    background-repeat: no-repeat;
+    background-size: 663px 430px;
+    background-position: right bottom;
+}
+
+.slider-item.slider-three {
+    background-image: url("../img/slide-3.png");
+    background-repeat: no-repeat;
+    background-size: 759px 411px;
+    background-position: right bottom;
 }
 
 .slider-item h2 {
@@ -171,8 +197,8 @@ a {
     width: 240px;
 }
 
-.slider-two,
-.slider-three {
+.slider-three,
+.slider-two {
     display: none;
 }
 
@@ -240,13 +266,16 @@ a {
 
 .service-list {
     display: flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
     padding-top: 80px;
     padding-bottom: 80px;
     
+}
+
+.service-list li:not(:last-child) {
+    margin-right: 100px;
 }
 
 .service-list-item h2 {
@@ -274,8 +303,6 @@ a {
 }
 
 .about-us {
-    display: flex;
-    flex-direction: column;
     width: 650px;
     padding-top: 80px;
     padding-bottom: 76px;
@@ -289,6 +316,7 @@ a {
     font-size: 45px;
     font-weight: 500;
     line-height: 45px;
+    margin-bottom: 35px;
 }
 
 .about-us .description {
@@ -298,8 +326,7 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    padding-top: 35px;
-    padding-bottom: 47px;
+    margin-bottom: 47px;
 }
 
 .list-title {
@@ -326,8 +353,13 @@ a {
     margin: 0;
     padding: 0;
     margin-left: auto;
-    padding-top: 40px;
+    padding-top: 248px;
     padding-bottom: 76px;
+
+    background-image: url("../img/nerds-illustration.png");
+    background-repeat: no-repeat;
+    background-size: 360px 208px;
+    background-position-y: 40px;
 }
 
 .statistic .title {
@@ -603,12 +635,18 @@ a {
     background-color: #d5d5d5;
 }
 
-.map img {
-    display: block;
+.map {
+    position: relative;
+    display: flex;  
+    justify-content: center;  
+    background-color: #b5b5b5;
 }
 
-.map {
-    background-color: #b5b5b5;
+
+.contacts {
+    position: absolute;
+    left: 320px;
+    top: 54px;
 }
 
 
@@ -624,6 +662,7 @@ a {
     padding-left: 50px;
     background-color: #ffffff;
     outline: 1px solid;
+    margin-bottom: 54px;
 }
 
 .feedback .title {
@@ -644,45 +683,46 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
-    /* padding-top: 32px; */
 }
 
+.footer-items {
+    display: flex;
+}
 
-.social-list {
-    display: inline-flex;
-
+.footer-items .social-list {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
+    padding-top: 110px;
+    max-width: 260px;
+    margin-right: 139px;
     
 }
 
 .prompt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.prompt {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 78px;
+    
+    min-width: 545px;
 }
 
 .prompt .prompt-appeal {
-    width: 545px;
-    height: 35px;
     font-size: 36px;
     font-weight: 700;
     line-height: 36px;
+    margin-bottom: 12px;
 }
 
 .prompt .prompt-discount {
-    /* width: 343px; */
-    height: 16px;
     color: #444444;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
+    padding-bottom: 76px;
 }
 
 
