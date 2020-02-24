@@ -151,15 +151,14 @@
       <section class="map">  
         <img src="img/map-nerds.jpg" width="1440px" height="416" alt="Адрес офиса: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">                     
         <section class="contacts">                         
-            <h2 class="title">Nёrds design studio</h2>
-            <p class="address">191186, Санкт-Петербург,</p>
-            <p class="address">ул. Б. Конюшенная, д. 19/8</p>
-            <p class="phone">тел. <a href="tel:+78122757575" aria-label="Наш телефон">+7 (812) 275-75-75</a></p>  
-            <a class="btn" href="write-us.html" aria-label="Кнопка для письма">Напишите нам</a>
+          <h2 class="title">Nёrds design studio</h2>
+          <p class="address">191186, Санкт-Петербург,</p>
+          <p class="address">ул. Б. Конюшенная, д. 19/8</p>
+          <p class="phone">тел. <a href="tel:+78122757575" aria-label="Наш телефон">+7 (812) 275-75-75</a></p>  
+          <a class="btn" href="write-us.html" aria-label="Кнопка для письма">Напишите нам</a>
         </section>           
       </section> 
       <div class="container">
-        <div class="footer-items">
           <ul class="social-list">
             <li class="social-item vk">
               <a href="#" aria-label="Вконтакте">Вконтакте</a>
@@ -174,32 +173,35 @@
           <p class="prompt">
             <span class="prompt-appeal">Давайте дружить, это выгодно!</span>
             <span class="prompt-discount">Скидка 10% для друзей из социальных сетей.</span>
-          </p>
-        </div>       
-        
+          </p>  
       </div>            
     </footer>
 
     <section class="popup">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form  class="write-us" action="https://echo.htmlacademy.ru" method="post">
-        <button type="button" aria-label="Закрыть форму">x</button>
-        <p>Напишите нам</p> 
-        <p class="half-width">
-          <label for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-        </p>
-        <p class="half-width">
-          <label for="mail">Ваш e-mail:</label>
-          <input type="email" name="mail" id="mail" placeholder="email@example.com">
-        </p>
+        <div class="write-us-title">
+          <p class="letter-us">Напишите нам</p> 
+          <button type="button" aria-label="Закрыть форму">x</button>
+        </div>
+        <div class="user-data">
+          <p class="half-width-name">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия">  
+          </p>
+          <p class="half-width-mail">
+            <label for="mail">Ваш e-mail:</label>
+            <input type="email" name="mail" id="mail" placeholder="email@example.com">
+          </p>
+        </div> 
+        
         <p class="text-letter">
           <label for="letter">Текст письма:</label>
           <textarea name="letter" id="letter" rows="5" placeholder="В свободной форме"></textarea>
         </p>
       
         <div class="send">
-          <input type="submit" value="Отправить" aria-label="Отправить данные">
+          <input type="submit" class="btn" value="Отправить" aria-label="Отправить данные">
         </div>       
       </form>
     </section>
