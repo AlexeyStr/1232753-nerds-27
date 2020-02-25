@@ -229,33 +229,33 @@
       </div>            
     </footer>
     
-    <section class="popup">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form  class="write-us" action="https://echo.htmlacademy.ru" method="post">
-        <div class="write-us-title">
-          <p class="letter-us">Напишите нам</p> 
-          <button type="button" aria-label="Закрыть форму">x</button>
-        </div>
-        <div class="user-data">
-          <p class="half-width-name">
-            <label for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="Имя Фамилия">  
-          </p>
-          <p class="half-width-mail">
-            <label for="mail">Ваш e-mail:</label>
-            <input type="email" name="mail" id="mail" placeholder="email@example.com">
-          </p>
-        </div> 
-        
-        <p class="text-letter">
-          <label for="letter">Текст письма:</label>
-          <textarea name="letter" id="letter" rows="5" placeholder="В свободной форме"></textarea>
-        </p>
-      
-        <div class="send">
-          <input type="submit" class="btn" value="Отправить" aria-label="Отправить данные">
-        </div>       
-      </form>
+    <section class="modal">
+      <div class="popup">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form  class="write-us" action="https://echo.htmlacademy.ru" method="post">
+          <div class="write-us-title">
+            <p class="letter-us">Напишите нам</p> 
+            <button class="button-close" type="button" aria-label="Закрыть форму"></button>
+          </div>
+          <div class="user-data">
+            <p class="half-width-name">
+              <label for="name">Ваше имя:</label>
+              <input type="text" name="name" id="name" placeholder="Имя Фамилия">  
+            </p>
+            <p class="half-width-mail">
+              <label for="mail">Ваш e-mail:</label>
+              <input type="email" name="mail" id="mail" placeholder="email@example.com">
+            </p>
+          </div>        
+          <p class="text-letter">
+            <label for="letter">Текст письма:</label>
+            <textarea name="letter" id="letter" rows="5" placeholder="В свободной форме"></textarea>
+          </p>     
+          <div class="send">
+            <input type="submit" class="btn" value="Отправить" aria-label="Отправить данные">
+          </div>       
+        </form>
+      </div>  
     </section>
   </body>
 </html>
