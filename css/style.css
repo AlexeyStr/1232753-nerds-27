@@ -952,6 +952,7 @@ a {
 }
 
 .popup {
+    display: flex;
     margin: 0;
     position: fixed;
     top: 50%;
