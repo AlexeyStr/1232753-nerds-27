@@ -5,45 +5,41 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
-
   <body class="page-catalog">
     <header class="catalog-header">
       <div class="container">
-        
-      <nav class="navigation"> 
-        <div class="logo">
-          <a href="index.html">
+        <nav class="navigation">
+          <div class="logo">
+            <a href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="65"
-             alt="Логотип «Nerds»">
-         </a>
-        </div> 
-        
-        <ul class="navigation-list">
-          <li class="navigation-list-item"><a href="#">Студия</a></li>
-          <li class="navigation-list-item"><a href="#">Клиенты</a></li>
-          <li class="navigation-list-item"><a class="current">Магазин</a></li>
-          <li class="navigation-list-item"><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="user-area">
-          <li>
-            <a class="cart" href="#">Корзина</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="title">Магазин готовых шаблонов</h1>
+              alt="Логотип «Nerds»">
+            </a>
+          </div>
+          <ul class="navigation-list">
+            <li class="navigation-list-item"><a href="#">Студия</a></li>
+            <li class="navigation-list-item"><a href="#">Клиенты</a></li>
+            <li class="navigation-list-item"><a class="current">Магазин</a></li>
+            <li class="navigation-list-item"><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="user-area">
+            <li>
+              <a class="cart" href="#">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="title">Магазин готовых шаблонов</h1>
       </div>
-      
     </header>
-    <main> 
+    <main>
       <div class="container">
         <div class="catalog-wrap">
           <section class="filters">
             <h2 class="visually-hidden">Фильтр</h2>
             <form class="network" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="range">
-                <legend>Стоимость:</legend> 
+                <legend>Стоимость:</legend>
                 <!--Позже дадут -->
                 <div class="range-filter">
                   <div class="range-controls">
@@ -59,23 +55,21 @@
                   </div>
                 </div>
               </fieldset>
-              
               <fieldset class="network-list">
                 <legend>Сетка:</legend>
-                  <p class="network-item">
-                    <input type="radio" id="adaptive" name="network" value="adaptive" class="visually-hidden" checked>
-                    <label for="adaptive">Адаптивная</label>
-                  </p>
-                  <p class="network-item">
-                    <input type="radio" id="fixed" name="network" value="fixed" class="visually-hidden">
-                    <label for="fixed">Фиксированная</label> 
-                  </p>
-                  <p class="network-item">
-                    <input type="radio" id="elastic" name="network" value="elastic" class="visually-hidden">
+                <p class="network-item">
+                  <input type="radio" id="adaptive" name="network" value="adaptive" class="visually-hidden" checked>
+                  <label for="adaptive">Адаптивная</label>
+                </p>
+                <p class="network-item">
+                  <input type="radio" id="fixed" name="network" value="fixed" class="visually-hidden">
+                  <label for="fixed">Фиксированная</label> 
+                </p>
+                <p class="network-item">
+                  <input type="radio" id="elastic" name="network" value="elastic" class="visually-hidden">
                   <label for="elastic">Резиновая</label>
-                  </p>                                                      
+                </p>
               </fieldset>
-            
               <fieldset class="features-list">
                 <legend>Особенности:</legend>
                 <p class="features-item">
@@ -100,9 +94,8 @@
                 </p>
               </fieldset>
               <input type="submit" name="show" value="Показать" aria-label="Показать выбранное">
-            </form>           
+            </form>
           </section>
-          
           <section class="catalog">
             <h2 class="visually-hidden">Каталог</h2>
             <section class="sort">
@@ -121,109 +114,112 @@
               <ul class="arrow-sort">
                 <li class="arrow-sort-current">
                   <a href="" rel="nofollow">
-                    <img src="img/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз">
+                  <img src="img/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз">
                   </a>            
                 </li>
                 <li class="arrow-sort-item">
                   <a href="" rel="nofollow">
-                    <img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка вверх">
+                  <img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка вверх">
                   </a>           
                 </li>
               </ul>
             </section>
-            
             <ul class="catalog-list">
               <li class="catalog-item" tabindex="0">
-                  <img src="img/sedona.jpg" width="360" height="576" alt="Образец первой страницы сайта Седона">
-                  <div class="hidden">
-                    <a href="#">
-                      <h3 class="title">Sedona</h3>
-                    </a>
-                    <p class="description">Информационный сайт 
-                      для туристов</p>
-                    <a class="btn" href="#" aria-label="Стоимость разработки">9 900 руб.</a>
-                  </div>
+                <img src="img/sedona.jpg" width="360" height="576" alt="Образец первой страницы сайта Седона">
+                <div class="hidden">
+                  <a href="#">
+                    <h3 class="title">Sedona</h3>
+                  </a>
+                  <p class="description">Информационный сайт 
+                    для туристов
+                  </p>
+                  <a class="btn" href="#" aria-label="Стоимость разработки">9 900 руб.</a>
+                </div>
               </li>
               <li class="catalog-item" tabindex="0">
-                  <img src="img/pink.jpg" width="360" height="576" alt="Образец первой страницы приложения Пинк">
-                  <div class="hidden">
-                    <a href="">
-                      <h3 class="title">Pink App</h3>
-                    </a>                    
-                    <p class="description">Продуктовый лендинг
-                      приложения для iOS и Android</p>
-                    <a class="btn" href="#" aria-label="Стоимость разработки">9 900 руб.</a>
-                  </div>
+                <img src="img/pink.jpg" width="360" height="576" alt="Образец первой страницы приложения Пинк">
+                <div class="hidden">
+                  <a href="">
+                    <h3 class="title">Pink App</h3>
+                  </a>
+                  <p class="description">Продуктовый лендинг
+                    приложения для iOS и Android
+                  </p>
+                  <a class="btn" href="#" aria-label="Стоимость разработки">9 900 руб.</a>
+                </div>
               </li>
               <li class="catalog-item" tabindex="0">
-                  <img src="img/barbershop.jpg" width="360" height="576" alt="Образец первой страницы сайта Барбершоп «Бородинский»">
-                  <div class="hidden">
-                    <a href="">
-                      <h3 class="title">Barbershop</h3>
-                    </a>                    
-                    <p class="description">Сайт салона красоты.
-                      Для мужчин, да.</p>
-                    <a class="btn" href="#" aria-label="Стоимость разработки">9 900 руб.</a>
-                  </div>
+                <img src="img/barbershop.jpg" width="360" height="576" alt="Образец первой страницы сайта Барбершоп «Бородинский»">
+                <div class="hidden">
+                  <a href="">
+                    <h3 class="title">Barbershop</h3>
+                  </a>
+                  <p class="description">Сайт салона красоты.
+                    Для мужчин, да.
+                  </p>
+                  <a class="btn" href="#" aria-label="Стоимость разработки">9 900 руб.</a>
+                </div>
               </li>
               <li class="catalog-item" tabindex="0">
-                  <img src="img/mishka.jpg" width="360" height="576" alt="Образец первой страницы сайта магазина Мишка">
-                  <div class="hidden">
-                    <a href="">
-                      <h3 class="title">Mishka</h3>
-                    </a>                    
-                    <p class="description">Интернет-магазин 
-                      вязаных игрушек</p>
-                    <a class="btn" href="#" aria-label="Стоимость разработки">9 900 руб.</a>
-                  </div>
+                <img src="img/mishka.jpg" width="360" height="576" alt="Образец первой страницы сайта магазина Мишка">
+                <div class="hidden">
+                  <a href="">
+                    <h3 class="title">Mishka</h3>
+                  </a>
+                  <p class="description">Интернет-магазин 
+                    вязаных игрушек
+                  </p>
+                  <a class="btn" href="#" aria-label="Стоимость разработки">9 900 руб.</a>
+                </div>
               </li>
               <li class="catalog-item" tabindex="0">
-                  <img src="img/aplus.jpg" width="360" height="576" alt="Образец первой страницы сайта фирмы А плюс">
-                  <div class="hidden">
-                    <a href="">
-                      <h3 class="title">A Plus</h3> 
-                    </a>                                    
-                    <p class="description">Лендинг курсов повышения квалификации</p>
-                    <a class="btn" href="#" aria-label="Стоимость разработки">9 900 руб.</a>
-                  </div>
+                <img src="img/aplus.jpg" width="360" height="576" alt="Образец первой страницы сайта фирмы А плюс">
+                <div class="hidden">
+                  <a href="">
+                    <h3 class="title">A Plus</h3>
+                  </a>
+                  <p class="description">Лендинг курсов повышения квалификации</p>
+                  <a class="btn" href="#" aria-label="Стоимость разработки">9 900 руб.</a>
+                </div>
               </li>
-              <li class="catalog-item" tabindex="0">                  
-                  <img src="img/kvast.jpg" width="360" height="576" alt=" Образец первой страницы сайта Кваст">
-                  <div class="hidden">
-                    <a href="">
-                      <h3 class="title">Кваст</h3>
-                    </a>                                                            
-                    <p class="description">Промо-сайт производителя
-                      крафтового кваса</p>
-                    <a class="btn" href="#" aria-label="Стоимость разработки">9 900 руб.</a>
-                  </div>
+              <li class="catalog-item" tabindex="0">
+                <img src="img/kvast.jpg" width="360" height="576" alt=" Образец первой страницы сайта Кваст">
+                <div class="hidden">
+                  <a href="">
+                    <h3 class="title">Кваст</h3>
+                  </a>
+                  <p class="description">Промо-сайт производителя
+                    крафтового кваса
+                  </p>
+                  <a class="btn" href="#" aria-label="Стоимость разработки">9 900 руб.</a>
+                </div>
               </li>
             </ul>
-
             <ul class="pagination-list">
               <li class="pagination-item-current"><a aria-label="Текущая страница">1</a></li>
               <li class="pagination-item"><a href="#" aria-label="страница">2</a></li>
               <li class="pagination-item"><a href="#" aria-label="страница">3</a></li>
               <li class="pagination-item"><button type="button" class="pagination-button"
-                 aria-label="Кнопка перехода на страницу">Следующая</button></li>
-            </ul>                           
-          </section>  
+                aria-label="Кнопка перехода на страницу">Следующая</button></li>
+            </ul>
+          </section>
         </div>
       </div>
     </main>
-    <footer class="page-footer">     
+    <footer class="page-footer">
       <section class="map">
         <h2 class="visually-hidden">Карта города</h2>
         <iframe src="https://yandex.ru/map-widget/v1/-/CKe0yZ1X"></iframe>  
         <img src="img/map-nerds.jpg" width="1440" height="416" alt="Адрес офиса: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">                     
-        <section class="contacts">                         
+        <section class="contacts">
           <h2 class="title">Nёrds design studio</h2>
           <p class="address">191186, Санкт-Петербург,</p>
           <p class="address">ул. Б. Конюшенная, д. 19/8</p>
-          <p class="phone">тел. <a href="tel:+78122757575" aria-label="Наш телефон">+7 (812) 275-75-75</a></p>  
+          <p class="phone">тел. <a href="tel:+78122757575" aria-label="Наш телефон">+7 (812) 275-75-75</a></p>
           <a class="btn" href="write-us.html" aria-label="Кнопка для письма">Напишите нам</a>
-        </section>           
-      </section> 
+        </section>
+      </section>
       <div class="container">
         <ul class="social-list">
           <li class="social-item vk">
@@ -240,15 +236,13 @@
           <span class="prompt-appeal">Давайте дружить, это выгодно!</span>
           <span class="prompt-discount">Скидка 10% для друзей из социальных сетей.</span>
         </p>
-        
-      </div>            
+      </div>
     </footer>
-    
     <section class="popup">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form  class="write-us" action="https://echo.htmlacademy.ru" method="post">
         <div class="write-us-title">
-          <p class="letter-us">Напишите нам</p> 
+          <p class="letter-us">Напишите нам</p>
           <button class="button-close" type="button" aria-label="Закрыть форму"></button>
         </div>
         <div class="user-data">
@@ -260,14 +254,14 @@
             <label for="mail">Ваш e-mail:</label>
             <input type="email" name="mail" id="mail" placeholder="email@example.com">
           </p>
-        </div>        
+        </div>
         <p class="text-letter">
           <label for="letter">Текст письма:</label>
           <textarea name="letter" id="letter" rows="5" placeholder="В свободной форме"></textarea>
-        </p>     
+        </p>
         <div class="send">
           <input type="submit" class="btn" value="Отправить" aria-label="Отправить данные">
-        </div>       
+        </div>
       </form>
     </section>
   </body>
