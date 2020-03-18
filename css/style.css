@@ -1595,7 +1595,7 @@ html {
   .popup-error textarea,
   .popup-error textarea:hover {
     border: 2px solid #e74246;
-    opacity: 0.3;
+    opacity: 0.4;
     background-color: #ffffff;
   }
 
