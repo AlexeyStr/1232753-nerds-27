@@ -1266,7 +1266,7 @@ html {
   }
   
   .map img {
-    height: auto;
+    height: 416px;
     max-width: 100%;
   }
   
@@ -1409,6 +1409,10 @@ html {
     background-color: #ffffff;
     -webkit-box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
     box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  }
+
+  .popup-show {
+    display: flex;
   }
   
   .write-us-title .button-close {
@@ -1584,4 +1588,18 @@ html {
   .send .btn {
     border: none;
     width: 260px;
+  }
+
+  .popup-error input[type="text"],
+  .popup-error input[type="email"],
+  .popup-error textarea,
+  .popup-error textarea:hover {
+    border: 2px solid #e74246;
+    opacity: 0.3;
+    background-color: #ffffff;
+  }
+
+  .popup-error textarea::-webkit-input-placeholder,
+  .popup-error input::-webkit-input-placeholder {
+    color: lightcoral;
   }
