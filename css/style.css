@@ -1275,6 +1275,8 @@ a {
   height: 416px;
   border: none;
   position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .container .social-list {
@@ -1421,8 +1423,9 @@ a {
 .button-close {
   position: absolute;
   padding: 20px;
+  padding-right: 10px;
   top: 67px;
-  right: 90px;
+  right: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1444,7 +1447,7 @@ a {
 .button-close::after {
   content: "";
   position: absolute;
-  width: 19px;
+  width: 25px;
   height: 3px;
   background-color: #e74246;
 }

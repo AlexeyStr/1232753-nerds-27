@@ -3,7 +3,7 @@ var popup = document.querySelector(".popup");
 var close = popup.querySelector(".button-close");
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=name]");
-var mail = popup.querySelector("[name=mail]");  
+var mail = popup.querySelector("[name=mail]");
 var text = popup.querySelector("[name=letter]");
 var loginbox = popup.querySelector(".half-width.name");
 var mailbox = popup.querySelector(".half-width.mail");
@@ -28,7 +28,7 @@ link.addEventListener("click", function (evt) {
   popup.classList.add("popup-show");
 
   login.focus();
-  
+
   if (storage) {
     login.value = storage;
     mail.focus();
@@ -55,7 +55,7 @@ form.addEventListener("submit", function (evt) {
     loginbox.classList.add("popup-error");
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("name", login.value);  
+      localStorage.setItem("name", login.value);
     }
   }
 });
@@ -78,7 +78,7 @@ form.addEventListener("submit", function (evt) {
   } else {
     if (isStorageSupport) {
       localStorage.setItem("name", login.value);
-      localStorage.setitem("mail", mail.value);  
+      localStorage.setitem("mail", mail.value);
     }
   }
 });
