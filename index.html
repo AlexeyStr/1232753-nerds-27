@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
     <header class="page-header">
@@ -201,19 +201,19 @@
     </footer>
     <section class="popup">
       <h2 class="visually-hidden">Форма обратной связи</h2>
+      <button class="button-close" type="button" aria-label="Закрыть форму"></button>
       <form  class="write-us" action="https://echo.htmlacademy.ru" method="post">
         <div class="write-us-title">
           <p class="letter-us">Напишите нам</p>
-          <button class="button-close" type="button" aria-label="Закрыть форму"></button>
         </div>
         <div class="user-data">
-          <p class="half-width-name">
+          <p class="half-width name">
             <label for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="Имя Фамилия">  
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия" autocomplete="off">  
           </p>
-          <p class="half-width-mail">
+          <p class="half-width mail">
             <label for="mail">Ваш e-mail:</label>
-            <input type="email" name="mail" id="mail" placeholder="email@example.com">
+            <input type="email" name="mail" id="mail" placeholder="email@example.com" autocomplete="off">
           </p>
         </div>
         <p class="text-letter">
