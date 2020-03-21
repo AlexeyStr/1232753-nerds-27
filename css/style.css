@@ -365,6 +365,11 @@ a {
   padding-bottom: 80px;
 }
 
+.service-list li {
+  display: block;
+  width: 300px;
+}
+
 .service-list li:not(:last-child) {
   margin-right: 100px;
 }
@@ -382,11 +387,16 @@ a {
 .service-list-item .description {
   margin: 0;
   padding: 0;
+  display: inline-block;
+  vertical-align: inherit;
   width: 260px;
   height: 41px;
   color: #283136;
   margin-top: 17px;
-  margin-bottom: 38px;
+}
+
+.service-list-item .btn {
+  margin-top: 38px;
 }
 
 .studio-wrapper {
@@ -807,6 +817,7 @@ a {
 .features-item label {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   padding-left: 36px;
   cursor: pointer;
 }
@@ -1267,7 +1278,7 @@ a {
 
 .map img {
   height: 416px;
-  max-width: 100%;
+  width: 100%;
 }
 
 .map iframe {
